@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on darwin)" generated="2026-03-14T00:55:28.657596" rpa="false" schemaversion="5">
+<suite id="s1" name="FrontOffice" source="/Users/karen/RobotFramework_FrontOfficeDemo/tests/FrontOffice.robot">
+<test id="s1-t1" name="Go to Front Office Homepage" line="14">
+<kw name="Go To Front Office Homepage" owner="FrontOfficeApp">
+<kw name="Navigate to" owner="Home">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-14T00:55:28.791892" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-14T00:55:28.791713" elapsed="5.854732"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T00:55:34.648860" level="INFO">Navigating to Home page</msg>
+<arg>Navigating to Home page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T00:55:34.647801" elapsed="0.001169"/>
+</kw>
+<status status="PASS" start="2026-03-14T00:55:28.791181" elapsed="5.857969"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Home">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_LABEL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-14T00:55:34.650181" elapsed="0.024257"/>
+</kw>
+<status status="PASS" start="2026-03-14T00:55:34.649692" elapsed="0.024865"/>
+</kw>
+<status status="PASS" start="2026-03-14T00:55:28.790909" elapsed="5.883700"/>
+</kw>
+<doc>This test case verifies that the Front Office homepage loads successfully</doc>
+<tag>Homepage</tag>
+<tag>SmokeTest</tag>
+<tag>TC1001</tag>
+<status status="PASS" start="2026-03-14T00:55:28.790388" elapsed="5.884462"/>
+</test>
+<test id="s1-t2" name="Check Team Section Header" line="19">
+<kw name="Go To Front Office Homepage" owner="FrontOfficeApp">
+<kw name="Navigate to" owner="Home">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-14T00:55:34.676073" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-14T00:55:34.675882" elapsed="5.882969"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T00:55:40.560838" level="INFO">Navigating to Home page</msg>
+<arg>Navigating to Home page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T00:55:40.559751" elapsed="0.001183"/>
+</kw>
+<status status="PASS" start="2026-03-14T00:55:34.675710" elapsed="5.885386"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Home">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_LABEL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-14T00:55:40.561976" elapsed="0.015147"/>
+</kw>
+<status status="PASS" start="2026-03-14T00:55:40.561465" elapsed="0.015779"/>
+</kw>
+<status status="PASS" start="2026-03-14T00:55:34.675500" elapsed="5.901795"/>
+</kw>
+<kw name="Verify Amazing Team Section" owner="FrontOfficeApp">
+<kw name="Navigate to &quot;Team&quot; Section" owner="Menu">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-03-14T00:55:40.578594" level="INFO">Clicking link 'Team'.</msg>
+<arg>${TEAM_LINK_LABEL}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-14T00:55:40.578092" elapsed="0.055337"/>
+</kw>
+<status status="PASS" start="2026-03-14T00:55:40.577890" elapsed="0.055639"/>
+</kw>
+<kw name="Verify Amazing Team Section" owner="AmazingTeam">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${AMAZING_TEAM_SECTION_HEADER}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-14T00:55:40.633894" elapsed="0.007451"/>
+</kw>
+<status status="PASS" start="2026-03-14T00:55:40.633683" elapsed="0.007741"/>
+</kw>
+<status status="PASS" start="2026-03-14T00:55:40.577618" elapsed="0.063848"/>
+</kw>
+<doc>This test case verifies that the Team section header is correct</doc>
+<tag>SmokeTest</tag>
+<tag>TC1002</tag>
+<tag>TeamSection</tag>
+<status status="PASS" start="2026-03-14T00:55:34.675095" elapsed="5.966522"/>
+</test>
+<doc>This is the test suite for RObot Automation PlayGround Front Office application.</doc>
+<status status="PASS" start="2026-03-14T00:55:28.658574" elapsed="11.983446"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Homepage</stat>
+<stat pass="2" fail="0" skip="0">SmokeTest</stat>
+<stat pass="1" fail="0" skip="0">TC1001</stat>
+<stat pass="1" fail="0" skip="0">TC1002</stat>
+<stat pass="1" fail="0" skip="0">TeamSection</stat>
+</tag>
+<suite>
+<stat name="FrontOffice" id="s1" pass="2" fail="0" skip="0">FrontOffice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
