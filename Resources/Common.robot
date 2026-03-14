@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    Dialogs
 Resource    ../Resources/PO/Home.robot
 
 
@@ -12,8 +13,13 @@ Go to "Front Office" page
     Maximize Browser Window
     Home.Verify Page Loaded
 
-Begin Web Test
+Begin Web Test 
     Open Browser     about:blank   ${BROWSER}
+
+Begin Web Test With Browser Selection
+    ${newbrowserselected}    Get Selection From User    Select Browser    Chrome    Firefox    Edge
+    Set Global Variable    ${BROWSER}    ${newbrowserselected}
+    Begin Web Test
 
 End Web Test
     Close All Browsers

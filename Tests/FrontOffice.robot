@@ -2,7 +2,7 @@
 Documentation    This is the test suite for RObot Automation PlayGround Front Office application.
 Resource    ../Resources/FrontOfficeApp.robot
 Resource    ../Resources/Common.robot
-Test Setup    Begin Web Test
+Test Setup    Begin Web Test With Browser Selection
 Test Teardown    End Web Test
 
 *** Variables ***
