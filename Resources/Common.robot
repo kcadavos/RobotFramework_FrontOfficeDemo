@@ -12,6 +12,9 @@ Go to "Front Office" page
     Maximize Browser Window
     Home.Verify Page Loaded
 
+Begin Web Test
+    Open Browser     about:blank   ${BROWSER}
+
 End Web Test
     Close All Browsers
 

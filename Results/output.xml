@@ -1,96 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.3 on darwin)" generated="2026-03-14T00:55:28.657596" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.3 on darwin)" generated="2026-03-14T11:25:26.777276" rpa="false" schemaversion="5">
 <suite id="s1" name="FrontOffice" source="/Users/karen/RobotFramework_FrontOfficeDemo/tests/FrontOffice.robot">
 <test id="s1-t1" name="Go to Front Office Homepage" line="14">
-<kw name="Go To Front Office Homepage" owner="FrontOfficeApp">
-<kw name="Navigate to" owner="Home">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-14T00:55:28.791892" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
-<arg>${URL}</arg>
+<msg time="2026-03-14T11:25:26.875224" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-14T00:55:28.791713" elapsed="5.854732"/>
+<status status="PASS" start="2026-03-14T11:25:26.875115" elapsed="1.312745"/>
+</kw>
+<status status="PASS" start="2026-03-14T11:25:26.874789" elapsed="1.313457"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-03-14T00:55:34.648860" level="INFO">Navigating to Home page</msg>
+<msg time="2026-03-14T11:25:28.189284" level="INFO">Executing Test Case 1001 - Go to Front Office</msg>
+<arg>Executing Test Case 1001 - Go to Front Office</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T11:25:28.188698" elapsed="0.000632"/>
+</kw>
+<kw name="Go To Front Office Homepage" owner="FrontOfficeApp">
+<kw name="Navigate To" owner="Home">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-14T11:25:28.190959" level="INFO">Opening browser 'firefox' to base url 'https://automationplayground.com/front-office/'.</msg>
+<arg>${URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-14T11:25:28.190739" elapsed="6.119834"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T11:25:34.311957" level="INFO">Navigating to Home page</msg>
 <arg>Navigating to Home page</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-03-14T00:55:34.647801" elapsed="0.001169"/>
+<status status="PASS" start="2026-03-14T11:25:34.311214" elapsed="0.000817"/>
 </kw>
-<status status="PASS" start="2026-03-14T00:55:28.791181" elapsed="5.857969"/>
+<status status="PASS" start="2026-03-14T11:25:28.190430" elapsed="6.121754"/>
 </kw>
 <kw name="Verify Page Loaded" owner="Home">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${HOME_HEADER_LABEL}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-03-14T00:55:34.650181" elapsed="0.024257"/>
+<status status="PASS" start="2026-03-14T11:25:34.312916" elapsed="0.015805"/>
 </kw>
-<status status="PASS" start="2026-03-14T00:55:34.649692" elapsed="0.024865"/>
+<status status="PASS" start="2026-03-14T11:25:34.312488" elapsed="0.016349"/>
 </kw>
-<status status="PASS" start="2026-03-14T00:55:28.790909" elapsed="5.883700"/>
+<status status="PASS" start="2026-03-14T11:25:28.189546" elapsed="6.139334"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-03-14T11:25:34.329504" elapsed="0.472729"/>
+</kw>
+<status status="PASS" start="2026-03-14T11:25:34.329264" elapsed="0.473041"/>
 </kw>
 <doc>This test case verifies that the Front Office homepage loads successfully</doc>
 <tag>Homepage</tag>
 <tag>SmokeTest</tag>
 <tag>TC1001</tag>
-<status status="PASS" start="2026-03-14T00:55:28.790388" elapsed="5.884462"/>
+<status status="PASS" start="2026-03-14T11:25:26.874424" elapsed="7.927939"/>
 </test>
-<test id="s1-t2" name="Check Team Section Header" line="19">
-<kw name="Go To Front Office Homepage" owner="FrontOfficeApp">
-<kw name="Navigate to" owner="Home">
+<test id="s1-t2" name="Check Team Section Header" line="20">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-14T00:55:34.676073" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
-<arg>${URL}</arg>
+<msg time="2026-03-14T11:25:34.803100" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-14T00:55:34.675882" elapsed="5.882969"/>
+<status status="PASS" start="2026-03-14T11:25:34.802990" elapsed="0.721438"/>
+</kw>
+<status status="PASS" start="2026-03-14T11:25:34.802843" elapsed="0.721750"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-03-14T00:55:40.560838" level="INFO">Navigating to Home page</msg>
+<msg time="2026-03-14T11:25:35.525129" level="INFO">Executing Test Case 1002 - Check Team Section Header</msg>
+<arg>Executing Test Case 1002 - Check Team Section Header</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T11:25:35.524846" elapsed="0.000314"/>
+</kw>
+<kw name="Go To Front Office Homepage" owner="FrontOfficeApp">
+<kw name="Navigate To" owner="Home">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-14T11:25:35.525684" level="INFO">Opening browser 'firefox' to base url 'https://automationplayground.com/front-office/'.</msg>
+<arg>${URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-14T11:25:35.525584" elapsed="5.797366"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T11:25:41.326291" level="INFO">Navigating to Home page</msg>
 <arg>Navigating to Home page</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-03-14T00:55:40.559751" elapsed="0.001183"/>
+<status status="PASS" start="2026-03-14T11:25:41.324586" elapsed="0.001818"/>
 </kw>
-<status status="PASS" start="2026-03-14T00:55:34.675710" elapsed="5.885386"/>
+<status status="PASS" start="2026-03-14T11:25:35.525479" elapsed="5.801107"/>
 </kw>
 <kw name="Verify Page Loaded" owner="Home">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${HOME_HEADER_LABEL}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-03-14T00:55:40.561976" elapsed="0.015147"/>
+<status status="PASS" start="2026-03-14T11:25:41.327444" elapsed="0.013368"/>
 </kw>
-<status status="PASS" start="2026-03-14T00:55:40.561465" elapsed="0.015779"/>
+<status status="PASS" start="2026-03-14T11:25:41.327008" elapsed="0.013902"/>
 </kw>
-<status status="PASS" start="2026-03-14T00:55:34.675500" elapsed="5.901795"/>
+<status status="PASS" start="2026-03-14T11:25:35.525307" elapsed="5.815658"/>
 </kw>
 <kw name="Verify Amazing Team Section" owner="FrontOfficeApp">
 <kw name="Navigate to &quot;Team&quot; Section" owner="Menu">
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-03-14T00:55:40.578594" level="INFO">Clicking link 'Team'.</msg>
+<msg time="2026-03-14T11:25:41.342610" level="INFO">Clicking link 'Team'.</msg>
 <arg>${TEAM_LINK_LABEL}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-14T00:55:40.578092" elapsed="0.055337"/>
+<status status="PASS" start="2026-03-14T11:25:41.341840" elapsed="0.241149"/>
 </kw>
-<status status="PASS" start="2026-03-14T00:55:40.577890" elapsed="0.055639"/>
+<status status="PASS" start="2026-03-14T11:25:41.341603" elapsed="0.241607"/>
 </kw>
 <kw name="Verify Amazing Team Section" owner="AmazingTeam">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${AMAZING_TEAM_SECTION_HEADER}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-03-14T00:55:40.633894" elapsed="0.007451"/>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-03-14T11:25:41.584219" elapsed="0.004517"/>
 </kw>
-<status status="PASS" start="2026-03-14T00:55:40.633683" elapsed="0.007741"/>
+<status status="PASS" start="2026-03-14T11:25:41.583568" elapsed="0.005311"/>
 </kw>
-<status status="PASS" start="2026-03-14T00:55:40.577618" elapsed="0.063848"/>
+<status status="PASS" start="2026-03-14T11:25:41.341365" elapsed="0.247585"/>
+</kw>
+<kw name="Verify Section Content" owner="FrontOfficeApp">
+<kw name="Validate Section element" owner="AmazingTeam">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-14T11:25:41.600286" level="INFO">${Element} = OUR AMAZING TEAM</msg>
+<var>${Element}</var>
+<arg>${AMAZING_TEAM_SECTION_HEADER}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-14T11:25:41.589906" elapsed="0.010430"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Element}</arg>
+<arg>Our Amazing Team</arg>
+<arg>ignore_case=True</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2026-03-14T11:25:41.600521" elapsed="0.000499"/>
+</kw>
+<status status="PASS" start="2026-03-14T11:25:41.589614" elapsed="0.011480"/>
+</kw>
+<status status="PASS" start="2026-03-14T11:25:41.589261" elapsed="0.011876"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-03-14T11:25:41.601658" elapsed="0.479414"/>
+</kw>
+<status status="PASS" start="2026-03-14T11:25:41.601421" elapsed="0.479754"/>
 </kw>
 <doc>This test case verifies that the Team section header is correct</doc>
 <tag>SmokeTest</tag>
 <tag>TC1002</tag>
 <tag>TeamSection</tag>
-<status status="PASS" start="2026-03-14T00:55:34.675095" elapsed="5.966522"/>
+<status status="PASS" start="2026-03-14T11:25:34.802584" elapsed="7.278670"/>
 </test>
 <doc>This is the test suite for RObot Automation PlayGround Front Office application.</doc>
-<status status="PASS" start="2026-03-14T00:55:28.658574" elapsed="11.983446"/>
+<status status="PASS" start="2026-03-14T11:25:26.777806" elapsed="15.303986"/>
 </suite>
 <statistics>
 <total>
