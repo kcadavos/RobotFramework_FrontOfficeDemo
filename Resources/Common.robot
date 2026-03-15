@@ -17,7 +17,7 @@ Begin Web Test
     Open Browser     about:blank   ${BROWSER}
 
 Begin Web Test With Browser Selection
-    ${newbrowserselected}    Get Selection From User    Select Browser    Chrome    Firefox    Edge
+    ${newbrowserselected}    Get Selection From User    Select Browser    Chrome    Firefox   
     Set Global Variable    ${BROWSER}    ${newbrowserselected}
     Begin Web Test
 
