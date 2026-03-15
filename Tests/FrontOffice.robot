@@ -24,5 +24,6 @@ Check Team Section Header
     FrontOfficeApp.Go To Front Office Homepage
     FrontOfficeApp.Verify Amazing Team Section
     FrontOfficeApp.Verify Section Content
+    FrontOfficeApp.Do Something Custom
 
 

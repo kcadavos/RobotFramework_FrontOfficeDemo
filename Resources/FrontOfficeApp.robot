@@ -1,9 +1,10 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    ../Libraries/MyCustomLibrary.py
 Resource    ../Resources/Common.robot
 Resource    ../Resources/PO/Home.robot
 Resource   ../Resources/PO/Menu.robot
 Resource   ../Resources/PO/AmazingTeam.robot
+
 
 *** Variables ***
 
@@ -19,5 +20,8 @@ Verify Amazing Team Section
 
 Verify Section Content
     AmazingTeam.Validate Section element
+
+Do Something Custom
+    Do Something Useful
 
 
